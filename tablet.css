@@ -1,0 +1,18 @@
+@media screen and (min-width: 768px) {
+    header {
+        height: 10rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #dateBox  {
+        height: 20rem; 
+    }
+
+    .todoCardBox {
+        border-bottom: solid black 0.5px;
+        height: 7rem;
+    }
+}

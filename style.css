@@ -22,6 +22,33 @@ header {
     height: 5rem;
 }
 
+h1 {
+    font-size: 2rem; 
+}
+
+#dateBox {
+    height: 10rem;
+    background: purple;
+    
+}
+
+.listOfCardBoxes {
+    width: 100%;
+    flex-direction: column;
+}
+
+.todoCardBox {
+    border-bottom: solid black 0.5px;
+    height: 4rem; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoCardBox p {
+    align-self: center;
+}
+
 .addBtn {
     background-color: lightgrey; 
     border-style: solid 1px;
@@ -37,16 +64,9 @@ header {
     bottom: 2rem; 
 }
 
-.todoCardBox {
-    border-bottom: solid black 0.5px;
-    margin-top: 5rem;
-}
 
-#dateBox {
-    height: 10rem;
-    background: purple;
-    
-}
+
+
 
 .flex {
     display: flex;
