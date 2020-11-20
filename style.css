@@ -12,7 +12,12 @@ body {
     width: 100%;
     background-color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
-   
+}
+.cursor-pointer {
+    cursor: pointer;
+  }
+main {
+    background: black;
 }
 
 /* HEADER */
@@ -20,26 +25,37 @@ header {
     background-color: black;
     color: white; 
     width: 100%;
-    height: 5rem;
+    height: 4rem;
 }
-
 h1 {
     font-size: 2rem; 
 }
-
-/* LEFT SIDE*/
-
-#dateBox {
-    height: 10rem;
-    background: purple;
-    
+.leftAndRightSideBox {
+  margin: auto;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid grey;
+  overflow: hidden;
 }
 
+/* LEFT SIDE*/
+.left-side {
+    width: 35%;
+    background: #7c60af;
+    float: left;
+    padding: 30px;
+    height: 100%;
+  }  
+#dateBox {
+    height: 10rem;
+    background: rgb(125, 74, 145);
+}
 .listOfCardBoxes {
     width: 100%;
     flex-direction: column;
 }
-
 .todoCardBox {
     border-bottom: solid black 0.5px;
     height: 4rem; 
@@ -47,11 +63,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
-
 .todoCardBox p {
     align-self: center;
 }
-
 .addBtn {
     background-color: lightgrey; 
     border-style: solid 1px;
@@ -189,7 +203,6 @@ h1 {
 .flex {
     display: flex;
 }
-
 .center {
     justify-content: center;
     align-items: center;
