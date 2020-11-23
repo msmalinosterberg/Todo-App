@@ -1,1 +1,3 @@
-window.onload = loadPage
+function loadToday() {
+    
+}
