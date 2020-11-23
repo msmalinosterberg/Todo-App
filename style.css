@@ -25,6 +25,8 @@ header {
     background-color: black;
     color: white; 
     width: 100%;
+    max-width: 1400px;
+    margin: auto;
     height: 4rem;
 }
 h1 {
@@ -35,14 +37,16 @@ h1 {
   background: white;
   height: 100vh;
   width: 100%;
-  border-radius: 10px;
-  border: 1px solid grey;
+  max-width: 1400px;
+  max-height: 800px;
+  /* border-radius: 20px; */
+  border: 1px solid black;
   overflow: hidden;
 }
 
 /* LEFT SIDE*/
-.left-side {
-    width: 35%;
+.leftSide {
+    width: 100%;
     background: #7c60af;
     float: left;
     padding: 30px;
@@ -89,7 +93,7 @@ h1 {
     height: 2rem;
     font-size: 1rem;
     /*font-weight: 100; */
-    position: absolute; 
+    position: relative; 
     right: 2rem; 
     bottom: 2rem; 
 }
@@ -245,6 +249,13 @@ h1 {
     background: #6f2da8;
   }
 
+
+
+
+/* RIGHT SIDE*/
+.rightSide {
+    display: none;
+}
 
 
 
