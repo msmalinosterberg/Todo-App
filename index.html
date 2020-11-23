@@ -8,11 +8,15 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./tablet.css">
   <link rel="stylesheet" href="./desktop.css">
-  <script src="./calendar.js"></script>
-  <script src="./todos.js"></script>
-  <script src="./today.js"></script>
-  <script src="./main.js"></script>
+ 
 
+  
+  <script src="./todos.js"></script> 
+  <script src="./today.js"></script> 
+  <script src="./calendar.js"></script> 
+  <script defer src="./add-todo.js"></script>
+  <script src="./welcome-segment.js"></script> 
+  <script src="./main.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b82fa01f24.js" crossorigin="anonymous"></script>
 </head>
@@ -45,11 +49,30 @@
       </div>
 
       <div class="flex">
-        <button class="addBtn"> <i class="fas fa-plus"> </i>
+        <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
         </button>
       </div>
 
-    </aside>
+<!-- The Modal -->
+<div id="add-todo-modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="add-content">
+    <span class="close">&times;</span>
+    <p>Lägg till en ny to do på din lista</p>
+    <form action="">
+      <p>Titel:</p>
+      <input type="text" name="todo-title" id="inputTodo">
+      <p>Datum:</p>
+      <input type="date" name="todo-date" id="">
+      <input type="submit" value="Spara">
+
+    </form>
+  </div>
+
+</div>
+
+</aside>
 
 <!-- RIGHT SIDE -->
 <div class="right-side">
