@@ -12,6 +12,7 @@
   <script src="./todos.js"></script>
   <script src="./today.js"></script>
   <script src="./calendar.js"></script>
+  <script defer src="./welcome-segment.js"></script> 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b82fa01f24.js" crossorigin="anonymous"></script>
 </head>
@@ -24,7 +25,11 @@
 
 <!-- LEFT SIDE  -->
 <aside> 
-<div id="dateBox"> <!-- Code injected from JavaScript--> </div>
+<div id="dateBox" class="center">
+  <h2 id="weekday"> </h2>
+  <h2 id="month"> </h2>
+  <h2 id="time"> </h2>
+</div>
  
 <div class="listOfCardBoxes flex "> 
       <div class="todoCardBox"> <p>HEJ HEJ </p> <!-- Code injected from JavaScript--> </div>
