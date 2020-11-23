@@ -1,8 +1,3 @@
-window.addEventListener('load', start);
-
-function start() {
-    startClock();
-}
 
 function startClock() {
     setInterval (updateClock, 1000);
