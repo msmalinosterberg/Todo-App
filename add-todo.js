@@ -15,3 +15,19 @@ btn.onclick = function() {
       modal.style.display = "none";
     }
   }
+
+function addTodo() {
+  const listItem = document.createElement('li'); 
+  const inputValue = document.getElementById('inputTodo').value; 
+  let inputText = document.createTextNode(inputValue); 
+  listItem.append(inputText)
+
+  document.getElementById("todo-container").append(listItem);
+
+ console.log('test')
+
+}
+submit.onclick = function() {
+  document.getElementById('inputTodo').value = "";
+}
+

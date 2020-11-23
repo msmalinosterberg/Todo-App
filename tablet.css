@@ -5,8 +5,9 @@
     h1 {
         font-size: 3rem;
     }
-    #dateBox {
-        height: 16rem;
+
+    #dateBox  {
+        height: 16rem; 
     }
     .todoCardBox {
         border-bottom: solid black 0.5px;
