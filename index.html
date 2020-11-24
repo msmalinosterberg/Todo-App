@@ -11,7 +11,7 @@
   <script src="./todos.js"></script> 
   <script src="./today.js"></script> 
   <script src="./calendar.js"></script> 
-  <script defer src="./add-todo.js"></script>
+  <!-- <script defer src="./add-todo.js"></script> -->
   <script src="./welcome-segment.js"></script> 
   <script src="./main.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -34,17 +34,36 @@
  
 <div class="listOfCardBoxes flex "> 
   <h2>Todos </h2>
-      <div id="todo-container" class="todoCardBox">  <!-- Code injected from JavaScript--> </div>
-</div>
+<!-- Test för att lägga object -->
+  <form action="">
+    <p>Titel:</p>
+    <input type="text" name="todo-title" id="title">
+    <p>Datum:</p>
+    <input type="date" name="todo-date" id="date">
+    <button id="todoBtn">Click to add</button>
+  </form>
+
+      <div id="todo-container" class="todoCardBox">  
+        <!-- Code injected from JavaScript--> </div>
+      </div>
       <div class="flex">
         <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
         </button>
       </div>
 
-<!-- The Modal -->
-<div id="add-todo-modal" class="modal">
+      <form action="">
+        <p>Titel:</p>
+        <input type="text" name="todo-title" id="title">
+        <p>Datum:</p>
+        <input type="date" name="todo-date" id="date">
+        <button id="todoBtn">Click to add</button>
+      </form>
+      
 
-  <!-- Modal content -->
+<!-- The Modal -->
+<!-- <div id="add-todo-modal" class="modal">
+
+   Modal content 
   <div class="add-content">
     <span class="close">&times;</span>
     <p>Lägg till en ny to do på din lista</p>
@@ -58,7 +77,7 @@
     </form>
   </div>
 
-</div>
+</div> -->
 
 </aside>
 

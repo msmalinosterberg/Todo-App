@@ -1,5 +1,5 @@
 
-/*
+
 function loadTodos() {
 // hämta alla todos från LS 
     renderTodos(); 
@@ -26,4 +26,4 @@ function renderTodos() {
         todoContainer.append(listItem); 
     }
 }
-*/ 
+
