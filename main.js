@@ -6,20 +6,21 @@ function start(){
 }
 
 function main() {
-  document.getElementById('todoBtn').addEventListener('click', addMovie);
+  document.getElementById('todoBtn').addEventListener('click', addTodo);
 }
 
-let movies = [];
+let todos = [];
 
-const addMovie = (ev)=>{
+const addTodo = (ev)=>{
     ev.preventDefault();
-    let movie = {
+    let todo = {
         title: document.getElementById('title').value,
         date: document.getElementById('date').value
     }
-    movies.push(movie);
+    todos.push(todo);
     document.querySelector('form').reset();
     renderTodos();
+    console.log(todo);
 }
 
 function loadTodos() {
@@ -32,14 +33,14 @@ function renderTodos() {
     const todoContainer = document.getElementById('list-content')
     todoContainer.innerHTML = ""; 
 
-    for(const todo of movies) {
+    for(const todoItem of todos) {
         const listItem = document.createElement('li'); 
-        listItem.innerHTML = todo.title;
+        listItem.innerHTML = todoItem.title;
 
         listItem.addEventListener('click', function(){
             // tar bort en todo när man klickar på todon 
-            const index = movies.indexOf(todo); 
-            movies.splice(index, 1); 
+            const index = todos.indexOf(todoItem); 
+            todos.splice(index, 1); 
             renderTodos(); 
         })
         todoContainer.append(listItem); 
