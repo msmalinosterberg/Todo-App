@@ -1,3 +1,4 @@
+/* Smaller tablets */
 @media screen and (min-width: 769px) {
     header {
         height: 8rem;
@@ -5,72 +6,70 @@
     h1 {
         font-size: 3rem;
     }
-
-    #dateBox  {
-        height: 16rem; 
-    }
-    .todoCardBox {
-        border-bottom: solid black 0.5px;
-        height: 3rem;
-    }
     /* LEFT SIDE*/
     .leftSide {
         width: 35%;
-        max-width: 400px;
+        max-width: 25rem;
     }
+    #dateBox  {
+        height: 20%; 
+    }
+    /* .todoCardBox {
+        border-bottom: solid black 0.5px;
+        height: 80%;
+    } */
+
     /* RIGHT SIDE*/
     .rightSide {
         display: block;
         width: 65%;
         float: right;
-        padding: 10px;
+        padding-top: 1.5625rem;
         margin: auto;
     }
     main {
         max-width: max-content;
-        margin: 0 auto 0 auto;
         background-color: #fff;
+        margin: auto;
     }
-    .month-indicator {
-        margin-top: 10px;
+    .current-year {
+        margin-top: 0.625rem;
         color: black;
         text-align: center;
+        font-size: 2rem;
         font-weight: 400;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.1rem;
     }
     .month-of-year {
-        font-size: 0.5em;
+        font-size: 0.7rem;
         color: black;
         font-weight: 300;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.1rem;
         font-variant: small-caps;
         text-align: center;
-    }
-    .month-of-year {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        margin-top: 10px;
+        margin-top: 0.625rem;
     }
-    .day-of-week, .date-grid {
+    .day-of-week {
+        margin-top: 0.625rem;
+        border-bottom: 1px solid black;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
     }
-    .day-of-week {
-        margin-top: 10px;
-        /* border-bottom: 1px solid black; */
-    }
     .day-of-week>* {
-        font-size: 1em;
+        font-size: 1rem;
         color: black;
         font-weight: 500;
-        letter-spacing: 0.1em;
-        font-variant: small-caps;
+        letter-spacing: 0.1rem;
         text-align: center;
     }
     .date-grid {
-        margin-top: 0.5em;
+        margin-top: 0.5rem;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
     }
-    /* Which cell as the months first day starts */
+    /* First day of month starts */
     .date-grid div:first-child {
         grid-column: 7;
     }
@@ -78,26 +77,26 @@
         position: relative;
         border: 1px solid grey;
         margin: 1px;
-        width: 90px;
-        height: 65px;
+        width: 5.75rem;
+        height: 5rem;
         background-color: transparent;
         color: black;
     }
     .date-grid div:hover, .date-grid div:focus {
         /* outline: none; */
-        background-color: rgb(156, 198, 253);
+        background-color: #4A906D;
         color: black;
     }
     .date-grid div:active, .date-grid div.is-selected {
-        background-color: #703fca;
-        color: #703fca;
+        background-color: #4A906D;
+        color: #4A906D;
     }
     .calendar-days li:after {
         content: attr(data-day);
         position: absolute;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
+        width: 2.5rem;
+        height: 2.5rem;
+        line-height: 2.5rem;
         color: #959595;
     }
     .calendar-days li.another-month:after {
@@ -112,15 +111,43 @@
     }
     .calendar-days li.todo-day:before {
         content: " ";
-        width: 5px;
-        height: 5px;
+        width: 0.3125rem;
+        height: 0.3125rem;
         position: absolute;
-        top: 7px;
-        right: 7px;
-        background: #1400c7;
+        top: 0.4375rem;
+        right: 0.4375rem;
+        background: #443561;
     }
     .calendar-days li.active-day:after {
         color: white;
-        background: #6f2da8;
+        background: #4A906D;
+    }
+}
+
+/*  Larger tablets */
+@media screen and (min-width: 1366px) {
+    .current-year {
+        margin-top: 0.625rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+    }
+    .month-of-year {
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        margin-top: 0.9375rem;
+    }
+    .day-of-week {
+        margin-top: 0.625rem;
+    }
+    .day-of-week>* {
+        font-size: 1.5rem;
+        font-weight: 500;
+        letter-spacing: 0.08rem;
+    }
+    .date-grid div {
+        width: 7.5rem;
+        height: 6.875rem;
     }
 }
