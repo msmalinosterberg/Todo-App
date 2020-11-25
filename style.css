@@ -13,9 +13,11 @@ body {
   background-color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
 }
-.cursor-pointer {
+
+.cursor-pointer { 
   cursor: pointer;
 }
+
 main {
   background: black;
 }
@@ -25,7 +27,7 @@ header {
   background-color: black;
   color: white;
   width: 100%;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: auto;
   height: 4rem;
 }
@@ -37,9 +39,9 @@ h1 {
   background: white;
   height: 100vh;
   width: 100%;
-  max-width: 1400px;
-  max-height: 1024px;
-  border-radius: 20px;
+  max-width: 87.5rem;
+  max-height: 64rem;
+  border-radius: 1.25rem;
   border: 1px solid black;
   overflow: hidden;
 }
@@ -49,7 +51,7 @@ h1 {
   width: 100%;
   background: #7c60af;
   float: left;
-  padding: 30px;
+  padding: 1.875rem;
   height: 100%;
 }
 #dateBox {
@@ -125,7 +127,7 @@ h1 {
 .add-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
+  padding: 1.25rem;
   border: 1px solid #888;
   width: 80%;
 }
@@ -134,7 +136,7 @@ h1 {
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: bold;
 }
 .close:hover, .close:focus {
@@ -143,8 +145,6 @@ h1 {
   cursor: pointer;
 }
 
-
-
 /* RIGHT SIDE*/
 .rightSide {
   display: none;
@@ -152,10 +152,7 @@ h1 {
 
 
 
-
-
-
-/* --- */
+/* REUSABLE CLASSES*/
 .flex {
   display: flex;
 }
