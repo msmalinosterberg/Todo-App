@@ -11,12 +11,9 @@ body {
   height: 100vh;
   width: 100%;
   background-color: lightgrey;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
-.cursor-pointer { 
-  cursor: pointer;
-}
 
 main {
   background: black;
@@ -41,34 +38,29 @@ h1 {
   width: 100%;
   max-width: 87.5rem;
   max-height: 64rem;
-  border-radius: 1.25rem;
-  border: 1px solid black;
   overflow: hidden;
 }
 
 /* LEFT SIDE*/
 .leftSide {
   width: 100%;
-  background: #7c60af;
+  background: #57A880;
   float: left;
   padding: 1.875rem;
   height: 100%;
 }
 #dateBox {
   position: relative;
-  height: 20%;
-  background: #443561;
+  background: #4A906D;
   margin: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 #dateBox h3, h2 {
   color: #ffffff;
   margin: 0.3rem;
   padding: 0;
   font-size: 1.7rem;
-  font-weight: 500;
 }
 .listOfCardBoxes {
   width: 100%;
@@ -76,7 +68,6 @@ h1 {
   flex-direction: column;
 }
 .todoCardBox {
-  /* border-bottom: solid black 0.5px; */
   height: 80%;
   width: 100%;
   justify-content: center;
@@ -99,6 +90,15 @@ h1 {
   bottom: 2rem;
 }
 
+
+li {
+  border-bottom: 1px solid black;
+  color: #06130D; 
+  padding: 1rem;
+  font-size: 1.5rem; 
+
+}
+
 /* MODAL - ADD TODO */
 .modal {
   display: none;
@@ -110,7 +110,7 @@ h1 {
   padding-top: 100px;
   /* Location of the box */
   left: 0;
-  top: 0;
+  top: 0; 
   width: 100%;
   /* Full width */
   height: 100%;
@@ -125,13 +125,27 @@ h1 {
 
 /* Modal Content */
 .add-content {
-  background-color: #fefefe;
+  background-color: #9FCDB6;
+  color: #2e2d2d; 
   margin: auto;
   padding: 1.25rem;
-  border: 1px solid #888;
-  width: 80%;
+  border: 2px solid #888;
+  width: 45%;
+
 }
 
+.BtnTodo {
+  color: #2e2d2d; 
+  border: 1px solid #888; 
+  padding: 0.2rem;
+
+}
+
+h5 {
+  margin: 0.8rem; 
+  margin-left: 0; 
+  color: #06130D;
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;
