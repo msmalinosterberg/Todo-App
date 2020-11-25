@@ -2,6 +2,7 @@ window.addEventListener('load', start);
 function start(){
     loadTodos();
     main();
+    startClock();
 }
 
 function main() {
