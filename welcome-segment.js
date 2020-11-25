@@ -11,11 +11,10 @@ function updateClock() {
     
     hours = formatValue(hours);
     minutes = formatValue(minutes);
-    seconds = formatValue(seconds);
     
     //update time 
     const timeHolder = document.getElementById('time');
-    timeHolder.innerText = hours + ':' + minutes + ':' + seconds
+    timeHolder.innerText = hours + ':' + minutes 
 
     //update weekday 
     const weekdayHolder = document.getElementById('weekday')
