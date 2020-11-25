@@ -19,6 +19,6 @@ function main(){
       loadToday();
       addTodo(); 
       startClock();
-     // loadTodos();
+      loadTodos();
 }
   

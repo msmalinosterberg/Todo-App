@@ -1,5 +1,4 @@
 
-
 function loadTodos() {
 // hämta alla todos från LS 
     renderTodos(); 
