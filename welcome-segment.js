@@ -7,7 +7,6 @@ function updateClock() {
     const date = new Date();
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    let seconds = date.getSeconds();
     
     hours = formatValue(hours);
     minutes = formatValue(minutes);
