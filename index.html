@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./tablet.css">
   <link rel="stylesheet" href="./desktop.css">
-
-
-
   <script src="./todos.js"></script>
   <script src="./today.js"></script>
   <script src="./calendar.js"></script>
@@ -43,6 +40,10 @@
         <div id="todo-container" class="todoCardBox">
           <ul class="todoList">
             <!-- Code injected from JavaScript-->
+      
+            <div id="list-content" class="list-content">
+              <!-- code injected from javascript -->
+            </div>
           </ul>
         </div>
         <div class="relative">
@@ -62,10 +63,10 @@
           <p>Lägg till en ny to do till din lista</p>
           <form action="">
             <p>Titel:</p>
-            <input type="text" name="todo-title" id="inputTodo">
+            <input type="text" name="todo-title" id="title">
             <p>Datum:</p>
-            <input type="date" name="todo-date" id="">
-            <input type="submit" value="Spara">
+            <input type="date" name="todo-date" id="date">
+            <button id="todoBtn">Click to add</button>
           </form>
         </div>
 
