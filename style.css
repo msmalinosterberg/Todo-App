@@ -8,51 +8,50 @@ html {
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: lightgrey;
+  background-color: white;
   font-family: 'Roboto', sans-serif;
 }
 
 
 main {
-  background: black;
+  background: white;
 }
 
 /* HEADER */
 header {
-  background-color: black;
+  background: #4A906D;
   color: white;
-  width: 100%;
-  max-width: 87.5rem;
-  margin: auto;
-  height: 4rem;
+  height: 6rem;
 }
-h1 {
-  font-size: 2rem;
+
+.heading {  
+  font-family: 'Galada', cursive;
+  font-size: 3rem;
+  display: flex;
+  padding-top: .5rem;
 }
+
 .leftAndRightSideBox {
   margin: auto;
-  background: white;
-  height: 100vh;
+  background: #57A880;
+  height: 100%;
   width: 100%;
-  max-width: 87.5rem;
-  max-height: 64rem;
   overflow: hidden;
 }
 
 /* LEFT SIDE*/
 .leftSide {
   width: 100%;
-  background: #57A880;
-  float: left;
-  padding: 1.875rem;
   height: 100%;
+  background: #57A880;
+  padding: 2rem;
 }
 #dateBox {
-  position: relative;
   background: #4A906D;
   margin: 0;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -63,9 +62,7 @@ h1 {
   font-size: 1.7rem;
 }
 .listOfCardBoxes {
-  width: 100%;
-  height: 80%;
-  flex-direction: column;
+  height: 100%;
 }
 .todoCardBox {
   height: 80%;
@@ -78,6 +75,7 @@ h1 {
   align-self: left;
 }
 .addBtn {
+  /* Styling */
   background-color: lightgrey;
   border-style: solid 1px;
   border-color: black;
@@ -86,9 +84,15 @@ h1 {
   width: 2rem;
   height: 2rem;
   font-size: 1rem;
-  right: 0rem;
+}
+
+  .button-plus {
+  /* Position */
+  position: fixed;
+  right: 2rem;
   bottom: 2rem;
 }
+
 
 
 li {
@@ -107,7 +111,7 @@ li {
   /* Stay in place */
   z-index: 1;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 13rem;
   /* Location of the box */
   left: 0;
   top: 0; 
@@ -130,7 +134,7 @@ li {
   margin: auto;
   padding: 1.25rem;
   border: 2px solid #888;
-  width: 45%;
+  width: 70%;
 
 }
 
@@ -154,7 +158,7 @@ h5 {
   font-weight: bold;
 }
 .close:hover, .close:focus {
-  color: #000;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }

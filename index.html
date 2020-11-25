@@ -18,18 +18,21 @@
 <script src="https://kit.fontawesome.com/b82fa01f24.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <header class="flex center">
+    <div>
+      <h1 class="heading">Todoer </h1>
+    </div>
+  </header>
+  
   <div class="leftAndRightSideBox">
-    <header class="flex center">
-      <div>
-        <h1>To Do </h1>
-      </div>
-    </header>
-
     <!-- LEFT SIDE  -->
-    <aside class="leftSide">
+    <aside>
+      <div class="leftSide">
       <div id="dateBox" class="center">
         <h2 style="font-size: 2rem;" id="weekday"> </h2>
         <h2 id="month"> </h2>
@@ -44,8 +47,8 @@
               <!-- code injected from javascript -->
             </div>
         </div>
-        <div class="relative">
-          <button class="addBtn absolute" id="addBtn"> <i class="fas fa-plus"> </i>
+        <div class="button-plus">
+          <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
           </button>
         </div>
       </div>
@@ -66,12 +69,13 @@
           </form>
         </div>
       </div>
+    </div>
     </aside>
 
     <!-- RIGHT SIDE -->
     <div class="rightSide">
       <main>
-        <div>
+        <div class="calendarContentBox">
           <div class="current-year">
             <time datetime="2020-11"> November 2020 </time>
           </div>
