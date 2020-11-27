@@ -74,6 +74,9 @@ header {
 .todoCardBox p {
   align-self: left;
 }
+/* .todo-list {
+  display: inline-block;
+}  */
 .addBtn {
   /* Styling */
   background-color: lightgrey;
