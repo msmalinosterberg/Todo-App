@@ -30,7 +30,7 @@ function updateCalenderWithTodoInfo() {
         }
     }
 
-
+    // Lägger en till liten kommentare här. 
     //1. Vi får inte över todos från todos.js, behöver läggas i en egen variabel? 
     //   Rad 35 todos.js
     
