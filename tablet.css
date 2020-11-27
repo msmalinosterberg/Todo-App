@@ -4,34 +4,45 @@
         height: 8rem;
     }
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
+    }
+    .leftAndRightSideBox {
+        display: flex;
+        flex-direction: row;
+        background: #ffffff;
+
     }
     /* LEFT SIDE*/
+    aside {
+        flex-direction: column;
+    }
+
     .leftSide {
-        width: 35%;
-        max-width: 25rem;
+        display: flex;
+        flex-direction: column;
     }
-    #dateBox  {
-        height: 20%; 
+
+    .add-content {
+        width: 45%;
     }
-    /* .todoCardBox {
-        border-bottom: solid black 0.5px;
-        height: 80%;
-    } */
+
+    .button-plus {
+        /* Position */
+        left: 16rem;
+        bottom: 10rem;
+      }
 
     /* RIGHT SIDE*/
     .rightSide {
-        display: block;
-        width: 65%;
-        float: right;
-        padding-top: 1.5625rem;
-        margin: auto;
+        display: flex;
+        flex: 2;
+        justify-content: center;
     }
     main {
-        max-width: max-content;
+        margin: 1rem;
         background-color: #fff;
-        margin: auto;
     }
+   
     .current-year {
         margin-top: 0.625rem;
         color: black;
@@ -116,7 +127,7 @@
         position: absolute;
         top: 0.4375rem;
         right: 0.4375rem;
-        background: #443561;
+        background: #4A906D;
     }
     .calendar-days li.active-day:after {
         color: white;
