@@ -1,21 +1,7 @@
-window.addEventListener('load', main); 
+window.addEventListener('load', start);
 
-const todoState = [{
-      title: 'Handla mat efter skolan', 
-      date: new Date()
-
-}, { 
-      title: 'Äta maten', 
-      date: new Date()
-
-}, { 
-      title: 'Sov',
-      date: new Date()
-
-}]
-
-function main(){
-      loadToday();
-      loadTodos();
+function start(){
+    loadTodos();
+    addTodoListener();
+    startClock();
 }
-  
