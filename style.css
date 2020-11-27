@@ -86,6 +86,9 @@ h1 {
 .todoCardBox p {
   align-self: left;
 }
+/* .todo-list {
+  display: inline-block;
+}  */
 .addBtn {
   background-color: lightgrey;
   border-style: solid 1px;
