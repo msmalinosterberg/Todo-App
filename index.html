@@ -15,10 +15,11 @@
 <script src="./main.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script src="https://kit.fontawesome.com/b82fa01f24.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
   <div class="leftAndRightSideBox">
     <header class="flex center">
       <div>
@@ -28,22 +29,19 @@
 
     <!-- LEFT SIDE  -->
     <aside class="leftSide">
-
       <div id="dateBox" class="center">
         <h2 style="font-size: 2rem;" id="weekday"> </h2>
         <h2 id="month"> </h2>
         <h2 id="time"> </h2>
       </div>
+      <h4>Things to do...</h4>
 
       <div class="listOfCardBoxes relative">
-        <h2>Todos </h2>
         <div id="todo-container" class="todoCardBox">
-          <ul class="todoList">
             <!-- Code injected from JavaScript-->
             <div id="list-content" class="list-content">
               <!-- code injected from javascript -->
             </div>
-          </ul>
         </div>
         <div class="relative">
           <button class="addBtn absolute" id="addBtn"> <i class="fas fa-plus"> </i>
@@ -57,13 +55,13 @@
         <!-- Modal content -->
         <div class="add-content">
           <span class="close">&times;</span>
-          <p>Lägg till en ny to do till din lista</p>
+          <h4>Lägg till en ny todo</h4>
           <form action="">
-            <p>Titel:</p>
+            <h5>Titel:</h5>
             <input type="text" name="todo-title" id="title">
-            <p>Datum:</p>
+            <h5>Välj datum:</h5>
             <input type="date" name="todo-date" id="date">
-            <button id="todoBtn">Lägg till</button>
+            <button class="BtnTodo" id="todoBtn">Lägg till</button>
           </form>
         </div>
       </div>

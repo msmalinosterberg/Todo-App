@@ -84,12 +84,12 @@
     }
     .date-grid div:hover, .date-grid div:focus {
         /* outline: none; */
-        background-color: #7c60af;
+        background-color: #4A906D;
         color: black;
     }
     .date-grid div:active, .date-grid div.is-selected {
-        background-color: #703fca;
-        color: #703fca;
+        background-color: #4A906D;
+        color: #4A906D;
     }
     .calendar-days li:after {
         content: attr(data-day);
@@ -120,7 +120,7 @@
     }
     .calendar-days li.active-day:after {
         color: white;
-        background: #6f2da8;
+        background: #4A906D;
     }
 }
 
