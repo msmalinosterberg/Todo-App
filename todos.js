@@ -1,1 +1,77 @@
-window.addEventListener('load', loadSite)
+function loadTodos() {
+    // hämta alla todos från LS 
+        renderTodos(); 
+    }
+    
+    
+    function renderTodos() {
+        const todoContainer = document.getElementById('todo-container')
+        todoContainer.innerHTML = ""; 
+    
+        for(const todo of todoState) {
+            const listItem = document.createElement('li'); 
+            listItem.innerHTML = todo.title; 
+            
+    
+            listItem.addEventListener('click', function(){
+                // tar bort en todo när man klickar på todon 
+                const index = todoState.indexOf(todo); 
+                todoState.splice(index, 1); 
+                renderTodos(); 
+    
+                console.log(todoState); 
+            })
+            todoContainer.append(listItem); 
+        }
+    }
+
+
+
+
+    function addTodoListener() {
+        document.getElementById('todoBtn').addEventListener('click', addTodo);
+      }
+      
+      let todos = [];
+      
+      const addTodo = (ev)=>{
+          ev.preventDefault();
+          let todo = {
+              title: document.getElementById('title').value,
+              date: document.getElementById('date').value
+          }
+          todos.push(todo);
+          document.querySelector('form').reset();
+          renderTodos();
+          console.log(todo);
+      }
+      
+      function loadTodos() {
+          // hämta alla todos från LS 
+              renderTodos(); 
+          }
+          
+          
+      function renderTodos() {
+          const todoContainer = document.getElementById('list-content')
+          todoContainer.innerHTML = ""; 
+      
+          for(const todoItem of todos) {
+              const listItem = document.createElement('li'); 
+              listItem.innerHTML = todoItem.title;
+              const checkbox = document.createElement('input')
+              checkbox.type = 'checkbox'
+            //   const editPen = dokument.createElement('i')
+            //   const deleteTodoX = dokument.createElement('i')
+
+      
+              listItem.addEventListener('click', function(){
+                  // tar bort en todo när man klickar på todon 
+                  const index = todos.indexOf(todoItem); 
+                  todos.splice(index, 1); 
+                  renderTodos(); 
+              })
+            //   todoContainer.append(checkbox, listItem, editPen, deleteTodoX); 
+              todoContainer.append(checkbox, listItem); 
+          }
+      }

@@ -1,9 +1,7 @@
-window.addEventListener('load', loadSite)
+window.addEventListener('load', start);
 
-
-function main () {
-      loadToday();
-      loadTodos();
-      loadCalendar();
-      
+function start(){
+    loadTodos();
+    addTodoListener();
+    startClock();
 }
