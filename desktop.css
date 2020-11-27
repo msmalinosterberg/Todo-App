@@ -1,6 +1,7 @@
-
-/* Calendar */
-.calendarBox {
+@media only screen and (min-width: 1080px) {
+ 
+  /* Calendar */
+  .calendarBox {
     display: grid;
     grid-template-rows: 
     1fr 1fr 1fr 1fr 1fr 1fr;
@@ -16,26 +17,37 @@
   
   .day {
     display:flex;
-     grid-row-start: 1;
+    grid-row-start: 1;
     background-color: #DDD; /* if display contents, this won't color */
     justify-content: center;
     grid-template-rows: 
     1fr 1fr 1fr 1fr 1fr 1fr;
   }
-
+  
   .day-label {
     grid-row-start: 5;
     grid-column-start: 1;
     margin: 2rem;
   }
-  
-  h3 {
-    font-size: 3rem;
-  }
-  
   .week-day, .day-label, .event {
     padding: 0.25rem 0.625rem;
   }
+
+   /* Header */
+  .heading {
+    font-size: 6rem;
+  }
+
+  /* Font sizes */
+  h3 {
+    font-size: 3rem;
+  }
+  .button-plus {
+    /* Position */
+    left: 16rem;
+    bottom: 2rem;
+  }
+
   
-  
+}
   
