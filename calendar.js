@@ -10,19 +10,22 @@ function updateCalenderWithTodoInfo() {
             if (todo.date === time.dateTime) {
                 
                 console.log('todo found for date!');
-                time.count++;
+
+                count++;
                 
-                if (count > 0) {
-                    time.append(" - " + count);
-                }
-             }
+            }
+        }
+        if (count > 0) {
+            time.append(" - " + count);
         }
         // console.log(time.dateTime);
    
-     }
     }
+}
 
-        let count = 0;
+function renderCalendar() {
+    //javascript-kalender 
+}
 
     
     // Loopa igenom times (loop)

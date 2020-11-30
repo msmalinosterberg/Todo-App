@@ -2,7 +2,7 @@ function loadTodos() {
     renderTodos();
 }
 
-let todos = [];
+let todos = [{title: "test", date: "2020-11-06"}];
 
 
 // function renderTodos() {
@@ -38,6 +38,7 @@ const addTodo = (ev) => {
     todos.push(todo);
     document.querySelector('form').reset();
     renderTodos();
+    renderCalendar();
     // console.log(todos);
 }
 
