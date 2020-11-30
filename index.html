@@ -37,7 +37,13 @@
         <h2 id="month"> </h2>
         <h2 id="time"> </h2>
       </div>
-      <h4>Things to do...</h4>
+      <div class="addSection">
+        <h4>Things to do...</h4>
+        <div class="button-plus">
+          <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
+          </button>
+        </div>
+      </div>
 
       <div class="listOfCardBoxes relative">
         <div id="todo-container" class="todoCardBox">
@@ -46,10 +52,7 @@
               <!-- code injected from javascript -->
             </div>
         </div>
-        <div class="button-plus">
-          <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
-          </button>
-        </div>
+
       </div>
 
       <!-- THE MODAL -->
@@ -104,21 +107,29 @@
           <div class="date-grid">
             <div class="date">
               <time datetime="2020-11-01">1</time>
+              <span></span> 
             </div>
             <div>
               <time datetime="2020-11-02">2</time>
+              <span></span>
             </div>
             <div>
               <time datetime="2020-11-03">3</time>
-            </div>
+              <span></span>
+            </div>  
             <div>
               <time datetime="2020-11-04">4</time>
+              <span></span>
             </div>
             <div>
               <time datetime="2020-11-05">5</time>
+              <span></span>
+
             </div>
             <div>
               <time datetime="2020-11-06">6</time>
+              <span></span>
+
             </div>
             <div>
               <time datetime="2020-11-07">7</time>
@@ -191,6 +202,8 @@
             </div>
             <div>
               <time datetime="2020-11-30">30</time>
+              <span id="numbersOfTodos"></span>
+
             </div>
           </div>
         </div>
