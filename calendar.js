@@ -25,7 +25,11 @@ function updateCalenderWithTodoInfo() {
             span.textContent = count;
             time.appendChild(span);
             }
-}
+        }
+        else {
+            time.querySelector('span').remove('span');        
+        }
+
 }
 }
 
