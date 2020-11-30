@@ -4,5 +4,5 @@ function start() {
       loadTodos();
       addTodoListener();
       startClock();
-      //updateCalenderWithTodoInfo();
+      updateCalenderWithTodoInfo();
 }

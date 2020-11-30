@@ -46,6 +46,8 @@ const addTodo = (ev) => {
 function renderTodos() {
     const todoContainer = document.getElementById('list-content')
     todoContainer.innerHTML = "";
+    const updateCalenderWithTodoInfo = document.getElementById('time-div')
+    
 
     for (const todoItem of todos) {
         const listItem = document.createElement('li');
