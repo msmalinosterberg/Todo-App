@@ -16,10 +16,10 @@ function updateCalenderWithTodoInfo() {
         }
         if (count > 0) {
             //Om span inte finns så lägg till span 
-            if (time.querySelectorAll('span')) {
+            if (time.querySelector('span')) {
                 time.querySelector('span').textContent = count;
             } 
-            
+
             else {
             let span = document.createElement('span');
             span.textContent = count;
