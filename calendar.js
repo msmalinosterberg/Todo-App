@@ -1,26 +1,28 @@
 function updateCalenderWithTodoInfo() {
     const times = document.querySelectorAll('time');
-
-    console.log(todos);
-    for (const time of times) {
-        
-        console.log(time.dateTime);
+     console.log(times);
+     console.log(todos);
+    
+    for (let time of times) {
         let count = 0;
-
-          
-        if (time.dateTime === todos.date) {
-        //    loop (?)
+        for (let todo of todos) {
+            console.log(todo.date + ' - ' + time.dateTime);
+            if (todo.date === time.dateTime) {
+                
+                console.log('todo found for date!');
+                time.count++;
+                
+                if (count > 0) {
+                    time.append(" - " + count);
+                }
+             }
+        }
+        // console.log(time.dateTime);
    
      }
     }
 
-
-        
-        if (count < 0) {
-            time.append(" - " + count);
-            break;
-        }
-    }
+        let count = 0;
 
     
     // Loopa igenom times (loop)
