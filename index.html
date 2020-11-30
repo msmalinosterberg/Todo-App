@@ -2,23 +2,24 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>To do</title>
-<link rel="stylesheet" href="./style.css">
-<link rel="stylesheet" href="./tablet.css">
-<link rel="stylesheet" href="./desktop.css">
-<script src="./todos.js"></script>
-<script src="./calendar.js"></script>
-<script defer src="./add-todo.js"></script>
-<script src="./welcome-segment.js"></script>
-<script src="./main.js"></script>
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<script src="https://kit.fontawesome.com/b82fa01f24.js" crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com"> 
-<link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To do</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tablet.css">
+  <link rel="stylesheet" href="./desktop.css">
+  <script src="./todos.js"></script>
+  <script src="./calendar.js"></script>
+  <script defer src="./add-todo.js"></script>
+  <script src="./welcome-segment.js"></script>
+  <script src="./main.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b82fa01f24.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,48 +28,48 @@
       <h1 class="heading">Todoer </h1>
     </div>
   </header>
-  
+
   <div class="leftAndRightSideBox">
     <!-- LEFT SIDE  -->
     <aside>
       <div class="leftSide">
-      <div id="dateBox" class="center">
-        <h2 style="font-size: 2rem;" id="weekday"> </h2>
-        <h2 id="month"> </h2>
-        <h2 id="time"> </h2>
-      </div>
-      <h4>Things to do...</h4>
+        <div id="dateBox" class="center">
+          <h2 style="font-size: 2rem;" id="weekday"> </h2>
+          <h2 id="month"> </h2>
+          <h2 id="time"> </h2>
+        </div>
+        <h4>Things to do...</h4>
 
-      <div class="listOfCardBoxes relative">
-        <div id="todo-container" class="todoCardBox">
+        <div class="listOfCardBoxes relative">
+          <div id="todo-container" class="todoCardBox">
             <!-- Code injected from JavaScript-->
             <div id="list-content" class="list-content">
               <!-- code injected from javascript -->
             </div>
+          </div>
+          <div class="button-plus">
+            <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
+            </button>
+          </div>
         </div>
-        <div class="button-plus">
-          <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
-          </button>
+
+        <!-- THE MODAL -->
+        <div id="add-todo-modal" class="modal">
+
+          <!-- Modal content -->
+          <div class="add-content">
+            <span class="close">&times;</span>
+            <h4>Lägg till en ny todo</h4>
+            <form action="">
+              <h5>Titel:</h5>
+              <input type="text" name="todo-title" id="title">
+              <h5>Välj datum:</h5>
+              <input type="date" name="todo-date" id="date">
+              <button class="BtnTodo" id="todoBtn">Lägg till</button>
+            </form>
+          </div>
         </div>
       </div>
-
-      <!-- THE MODAL -->
-      <div id="add-todo-modal" class="modal">
-
-        <!-- Modal content -->
-        <div class="add-content">
-          <span class="close">&times;</span>
-          <h4>Lägg till en ny todo</h4>
-          <form action="">
-            <h5>Titel:</h5>
-            <input type="text" name="todo-title" id="title">
-            <h5>Välj datum:</h5>
-            <input type="date" name="todo-date" id="date">
-            <button class="BtnTodo" id="todoBtn">Lägg till</button>
-          </form>
-        </div>
-      </div>
-    </div>
     </aside>
 
     <!-- RIGHT SIDE -->
@@ -101,9 +102,34 @@
             <div>Lördag</div>
             <div>Söndag</div>
           </div>
+
+          <div id="cal-container">
+            <div id="cal-header">
+              <div>
+                <p class="month-year" id="month"></p>
+              </div>
+              <div>
+                <p class="month-year" id="year"></p>
+              </div>
+            </div>
+            <div id="days-container">
+              <div id="0" class="day-column"> <p>Sun</p></div>
+              <div id="1" class="day-column"> <p>Mon</p></div>
+              <div id="2" class="day-column"> <p>Tue</p></div>
+              <div id="3" class="day-column"> <p>Wed</p></div>
+              <div id="4" class="day-column"> <p>Thu</p></div>
+              <div id="5" class="day-column"> <p>Fri</p></div>
+              <div id="6" class="day-column"> <p>Sat</p></div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- <div id="app-calendar"></div>
           <div class="date-grid">
             <div class="date">
               <time datetime="2020-11-01">1</time>
+            <span>3</span>
             </div>
             <div>
               <time datetime="2020-11-11">2</time>
@@ -192,9 +218,10 @@
             <div>
               <time datetime="2020-11-30">30</time>
             </div>
-          </div>
-        </div>
-      </main>
+          </div> -->
+    </div>
+    </main>
   </div>
 </body>
+
 </html>

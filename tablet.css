@@ -42,6 +42,46 @@
         margin: 1rem;
         background-color: #fff;
     }
+
+    #app-calendar {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        height: 100%;
+    }
+
+
+
+
+
+    #cal-container {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        margin: 150px 300px;
+      }
+      
+      #cal-header {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      
+      
+      .month-year {
+        display: inline;
+      
+      }
+      
+      #days-container {
+        display: flex;
+        justify-content: space-around;
+      }
+
+
+
+
+
    
     .current-year {
         margin-top: 0.625rem;

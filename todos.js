@@ -3,7 +3,8 @@ function loadTodos() {
         renderTodos(); 
     }
     
-    
+    // let todos = [{title: "test", date: "2020-11-06"}];
+
     function renderTodos() {
         const todoContainer = document.getElementById('todo-container')
         todoContainer.innerHTML = ""; 
@@ -18,7 +19,7 @@ function loadTodos() {
                 const index = todoState.indexOf(todo); 
                 todoState.splice(index, 1); 
                 renderTodos(); 
-    
+                renderCalendar(); 
                 console.log(todoState); 
             })
             todoContainer.append(listItem); 
@@ -61,8 +62,8 @@ function loadTodos() {
               listItem.innerHTML = todoItem.title;
               const checkbox = document.createElement('input')
               checkbox.type = 'checkbox'
-            //   const editPen = dokument.createElement('i')
-            //   const deleteTodoX = dokument.createElement('i')
+            //    const editPen = document.createElement('i')
+            //    const deleteTodoX = document.createElement('i')
 
       
               listItem.addEventListener('click', function(){
@@ -71,7 +72,12 @@ function loadTodos() {
                   todos.splice(index, 1); 
                   renderTodos(); 
               })
-            //   todoContainer.append(checkbox, listItem, editPen, deleteTodoX); 
-              todoContainer.append(checkbox, listItem); 
+            //  todoContainer.append(checkbox, listItem, editPen, deleteTodoX); 
+                todoContainer.append(checkbox, listItem); 
           }
       }
+
+
+
+
+      // HUr många arrayer finns det med datumet xxx
