@@ -16,9 +16,9 @@ function updateCalenderWithTodoInfo() {
             }
         }
         if (count > 0) {
-            document.getElementById('numbersOfTodos').innerHTML = count++;
+            time.querySelectorAll('span').appendChild = count++;
         }
-        // console.log(time.dateTime);
+        // console.log(time.    dateTime);
    
     }
 }
