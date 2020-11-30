@@ -12,16 +12,24 @@ function updateCalenderWithTodoInfo() {
                 console.log('todo found for date!');
 
                 count++;
-                
             }
         }
+
         if (count > 0) {
-            time.querySelectorAll('span').appendChild = count++;
+            time.innerHTML = "<span>" + count + "</span>";
         }
-        // console.log(time.    dateTime);
-   
     }
 }
+
+// let span = document.createElement("span");
+// let node = document.createTextNode(count);
+// span.appendChild(node);
+//if
+//var element = document.getElementById('hej');
+//        element.appendChild(span);
+
+
+//document.querySelectorAll('span').innerHTML = "<span>" + count + "</span>";
 
 // function renderCalendar() {
 //     //javascript-kalender 
