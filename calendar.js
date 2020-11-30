@@ -25,33 +25,12 @@ function updateCalenderWithTodoInfo() {
             span.textContent = count;
             time.appendChild(span);
             }
+        }
+        else if (time.querySelector('span')) {
+            time.querySelector('span').remove();       
+        }
+
+
 }
 }
-}
-
-// time.innerHTML = "<span>" + times + count + "</span>";
-
-// let span = document.createElement("span");
-// let node = document.createTextNode(count);
-// span.appendChild(node);
-//if
-//var element = document.getElementById('hej');
-//        element.appendChild(span);
-
-
-//document.querySelectorAll('span').innerHTML = "<span>" + count + "</span>";
-
-// function renderCalendar() {
-//     //javascript-kalender 
-// }
-
-    
-    // Loopa igenom times (loop)
-        // Kolla om datumet sparat i time matchar något datum i todos listan (loop)
-        // Om det matchar då lägg till en siffra på time elementet.
-
-// 
-
-//const span = document.createElement('span');
-//span.innerHTML = 2;
 
