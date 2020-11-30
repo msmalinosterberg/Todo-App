@@ -16,16 +16,17 @@ function updateCalenderWithTodoInfo() {
             }
         }
         if (count > 0) {
-            time.append(" - " + count);
+            
+            document.getElementById('numbersOfTodos').innerHTML = count++;
         }
         // console.log(time.dateTime);
    
     }
 }
 
-function renderCalendar() {
-    //javascript-kalender 
-}
+// function renderCalendar() {
+//     //javascript-kalender 
+// }
 
     
     // Loopa igenom times (loop)
