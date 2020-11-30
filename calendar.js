@@ -1,27 +1,75 @@
-function updateCalenderWithTodoInfo() {
-    const times = document.querySelectorAll('time');
-     console.log(times);
-     console.log(todos);
+// function updateCalenderWithTodoInfo() {
+//     const times = document.querySelectorAll('time');
+//      console.log(times);
+//      console.log(todos);
     
-    for (let time of times) {
-        let count = 0;
-        for (let todo of todos) {
-            console.log(todo.date + ' - ' + time.dateTime);
-            if (todo.date === time.dateTime) {
+//     for (let time of times) {
+//         let count = 0;
+//         for (let todo of todos) {
+//             console.log(todo.date + ' - ' + time.dateTime);
+//             if (todo.date === time.dateTime) {
                 
-                console.log('todo found for date!');
+//                 console.log('todo found for date!');
 
-                count++;
+//                 count++;
                 
-            }
-        }
-        if (count > 0) {
-            time.append(" - " + count);
-        }
-        // console.log(time.dateTime);
+//             }
+//         }
+//         if (count > 0) {
+//             time.append(" - " + count);
+//         }
+//         // console.log(time.dateTime);
    
+//     }
+// }
+
+//get the number of days in a month 
+
+let yearChosen = new Date().getFullYear();
+let monthChosen = new Date().getMonth();
+let months = [
+    'Januari',
+    'Februari',
+    'Mars',
+    'April',
+    'Maj',
+    'Juni',
+    'Juli',
+    'Augusti',
+    'September',
+    'Oktober',
+    'November',
+    'December'
+];
+
+
+function getNumberOfDays(year, month) {
+    let numDays = new Date(year, month + 1, 0).getDate()
+    return numDays;
+
+}
+
+
+function renderCal(getNumDays) {
+    let yearPTag = document.getElementById('year');
+    yearPTag.innerText = yearChosen; 
+    let monthName = months[monthChosen];
+    let monthPTag = document.getElementById('month');
+    monthPTag.innerText = monthName;
+
+    for (let i = 1; i <= getNumDays; i++) {
+        let dayPTag = document.createElement('p');
+        dayPTag.style.fontSize = '1.3rem';
+        let dayText = document.createTextNode(i.toString());
+        dayPTag.appendChild(dayText);
+        let date = monthName + " " + i.toString() + ", " + yearChosen;
+        let dayOfWeek = new Date(date).getDay();
+        document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
+
+        console.log(date);
     }
 }
+renderCal(getNumberOfDays(yearChosen, monthChosen));
 
 function renderCalendar() {
     //javascript-kalender 

@@ -19,6 +19,30 @@ main {
   background: #ffffff;
 }
 
+#cal-container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: 150px 300px;
+}
+
+#cal-header {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.month-year {
+  display: inline;
+
+}
+
+#days-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* HEADER */
 header {
   background-color: #4A906D;
