@@ -67,13 +67,30 @@ function renderCal(getNumDays) {
         document.getElementById(dayOfWeek.toString()).appendChild(dayPTag);
 
         console.log(date);
+                count++;
+            }
+        }
+
+        if (count > 0) {
+            time.innerHTML = "<span>" + count + "</span>";
+        }
     }
 }
 renderCal(getNumberOfDays(yearChosen, monthChosen));
 
-function renderCalendar() {
-    //javascript-kalender 
-}
+// let span = document.createElement("span");
+// let node = document.createTextNode(count);
+// span.appendChild(node);
+//if
+//var element = document.getElementById('hej');
+//        element.appendChild(span);
+
+
+//document.querySelectorAll('span').innerHTML = "<span>" + count + "</span>";
+
+// function renderCalendar() {
+//     //javascript-kalender 
+// }
 
     
     // Loopa igenom times (loop)
