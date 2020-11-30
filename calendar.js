@@ -14,12 +14,19 @@ function updateCalenderWithTodoInfo() {
                 count++;
             }
         }
-
         if (count > 0) {
-            time.innerHTML = "<span>" + count + "</span>";
+            let span = document.createElement('span');
+            if (span < 0)
+            span.textContent = count;
+            time.appendChild(span);
+        } else if (count <= 0) {
+            span.remove();
         }
+
     }
 }
+
+// time.innerHTML = "<span>" + times + count + "</span>";
 
 // let span = document.createElement("span");
 // let node = document.createTextNode(count);
