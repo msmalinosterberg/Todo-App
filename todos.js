@@ -25,9 +25,24 @@ function loadTodos() {
             todoContainer.append(listItem); 
         }
     }
+    todos.push(todo);
+    document.querySelector('form').reset();
+    renderTodos();
+    // console.log(todos);
 
 
 
+function renderTodos() {
+    const todoContainer = document.getElementById('list-content')
+    todoContainer.innerHTML = "";
+
+    for (const todoItem of todos) {
+        const listItem = document.createElement('li');
+        listItem.innerHTML = todoItem.title;
+        const checkbox = document.createElement('input')
+        checkbox.type = 'checkbox'
+        //   const editPen = document.createElement('i')
+        //   const deleteTodoX = document.createElement('i')
 
     function addTodoListener() {
         document.getElementById('todoBtn').addEventListener('click', addTodo);
@@ -81,3 +96,16 @@ function loadTodos() {
 
 
       // HUr många arrayer finns det med datumet xxx
+
+        listItem.addEventListener('click', function () {
+            // tar bort en todo när man klickar på todon 
+            const index = todos.indexOf(todoItem);
+            todos.splice(index, 1);
+            renderTodos();
+            updateCalenderWithTodoInfo();
+        })
+        //   todoContainer.append(checkbox, listItem, editPen, deleteTodoX); 
+        todoContainer.append(checkbox, listItem);
+    }
+}
+
