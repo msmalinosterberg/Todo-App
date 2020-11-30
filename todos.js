@@ -3,7 +3,7 @@ function loadTodos() {
         renderTodos(); 
     }
     
-    // let todos = [{title: "test", date: "2020-11-06"}];
+     let todos = [{title: "test", date: "2020-11-06"}];
 
     function renderTodos() {
         const todoContainer = document.getElementById('todo-container')

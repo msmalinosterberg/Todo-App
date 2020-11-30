@@ -60,7 +60,6 @@ function updateCalenderWithTodoInfo() {
 
 // 
 }
-console.log(todos);
 
 //const span = document.createElement('span');
 //span.innerHTML = 2;
