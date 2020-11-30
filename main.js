@@ -5,4 +5,4 @@ function start() {
       addTodoListener();
       startClock();
       updateCalenderWithTodoInfo();
-}
+};

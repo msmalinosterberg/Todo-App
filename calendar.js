@@ -17,20 +17,18 @@ function updateCalenderWithTodoInfo() {
             // the count how many todo
 
             console.log(todo.date);
-            const todosSpan = document.createElement('span')
-            span.innerHTML = "";
+            
            }
            
-
         }
         
         if (count > 0) {
-            time.append("todosSpan" + count);
+            time.append("-" + count);
             break;
         }
     }
 
-    // Lägger en till liten kommentare här. 
+// 
     //1. Vi får inte över todos från todos.js, behöver läggas i en egen variabel? 
     //   Rad 35 todos.js
     
