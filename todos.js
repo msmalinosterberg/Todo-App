@@ -51,7 +51,6 @@ function renderTodos() {
             renderTodos();
             updateCalenderWithTodoInfo();
         })
-        // listItem.append(listContent);
         listItem.append(trashButton);
         todoContainer.append(listItem);
     }

@@ -1,4 +1,4 @@
-// let count = 0
+ let count = ""
 let numberOfTodos = document.createElement("p");
 let renderNumberOfTodos = document.createTextNode(count);
 numberOfTodos.appendChild(renderNumberOfTodos);
@@ -23,21 +23,26 @@ function updateCalenderWithTodoInfo() {
             }
         }
         if (count > 0) {
-            if (time.querySelector('p')) {
-                time.querySelector('p').textContent = count + "Todos";
-            }
+            //Om span inte finns så lägg till span 
+            if (time.querySelector('span')) {
+                time.querySelector('span').textContent = count;
+            } 
 
             else {
-                let numberOfTodos = document.createElement('p');
-                p.textContent = count + "Todos";
-                time.appendChild(numberOfTodos);
+            let span = document.createElement('span');
+            span.textContent = count;
+            time.appendChild(span);
             }
         }
-    }
-}
+        else if (time.querySelector('span')) {
+            time.querySelector('span').remove();       
+        }
 
 
-function getNumberOfDays(year, month) {
-    let numDays = new Date(year, month + 1, 0).getDate()
-    return numDays;
 }
+}
+
+// function getNumberOfDays(year, month) {
+//     let numDays = new Date(year, month + 1, 0).getDate()
+//     return numDays;
+// }
