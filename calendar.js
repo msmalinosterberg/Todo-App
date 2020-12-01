@@ -25,6 +25,8 @@ function updateCalenderWithTodoInfo() {
         }
         else if (time.querySelector('p')) {
             time.querySelector('p').remove();
+            // updateCalenderWithTodoInfo();
         }
     }
 }
+
