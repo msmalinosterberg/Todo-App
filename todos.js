@@ -32,7 +32,8 @@ function renderTodos() {
         // create todo item div
         const todoDiv = document.createElement('div');
         todoDiv.classList.add("todo-item-div"); // add class
-        
+        // todoDiv.appendChild(todoContainer);
+
         // create li
         const listItem = document.createElement('li');
         todoDiv.appendChild(listItem);
@@ -42,14 +43,13 @@ function renderTodos() {
         trashButton.innerHTML = '<i class="fas fa-trash"></i>';
         trashButton.classList.add("trash-button"); // add class
         todoDiv.appendChild(trashButton);
-        // todoDiv.appendChild(todoContainer);
 
         // remove todo when click checkbox
         trashButton.addEventListener('click', function () {
             const index = todos.indexOf(todoItem);
             todos.splice(index, 1);
             renderTodos();
-            // updateCalenderWithTodoInfo(); ---------------------------------?
+            // updateCalenderWithTodoInfo();
         })
         listItem.append(trashButton);
         todoContainer.append(listItem);
