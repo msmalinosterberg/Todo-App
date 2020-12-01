@@ -1,9 +1,13 @@
 function loadTodos() {
-    // hämta alla todos från LS 
-        renderTodos(); 
-    }
-    
-     let todos = [{title: "test", date: "2020-11-06"}];
+    renderTodos();
+}
+
+let todos = [];
+
+function addTodoListener() {
+    document.getElementById('todoBtn').addEventListener('click', addTodo);
+}
+
 
     function renderTodos() {
         const todoContainer = document.getElementById('todo-container')
@@ -34,11 +38,19 @@ function loadTodos() {
 
 
 function renderTodos() {
-    const todoContainer = document.getElementById('list-content')
+    const todoContainer = document.getElementById('list-content');
     todoContainer.innerHTML = "";
+    const updateCalenderWithTodoInfo = document.getElementById('time-div');
 
     for (const todoItem of todos) {
+        // create todo item div
+        const todoDiv = document.createElement('div');
+        todoDiv.classList.add("todo-item-div"); // add class
+        // todoDiv.appendChild(todoContainer);
+
+        // create li
         const listItem = document.createElement('li');
+        todoDiv.appendChild(listItem);
         listItem.innerHTML = todoItem.title;
         const checkbox = document.createElement('input')
         checkbox.type = 'checkbox'
@@ -100,13 +112,21 @@ function renderTodos() {
 
         listItem.addEventListener('click', function () {
             // tar bort en todo när man klickar på todon 
+        // create trash button
+        const trashButton = document.createElement('button');
+        trashButton.innerHTML = '<i class="fas fa-trash"></i>';
+        trashButton.classList.add("trash-button"); // add class
+        todoDiv.appendChild(trashButton);
+
+        // remove todo when click checkbox
+        trashButton.addEventListener('click', function () {
             const index = todos.indexOf(todoItem);
             todos.splice(index, 1);
             renderTodos();
-            updateCalenderWithTodoInfo();
+            // updateCalenderWithTodoInfo();
         })
-        //   todoContainer.append(checkbox, listItem, editPen, deleteTodoX); 
-        todoContainer.append(checkbox, listItem);
+        listItem.append(trashButton);
+        todoContainer.append(listItem);
     }
 }
 
