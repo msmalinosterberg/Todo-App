@@ -2,11 +2,9 @@
   list-style: none;
   box-sizing: border-box;
 }
-
 html {
   overflow-x: hidden;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -15,46 +13,38 @@ body {
   background-color: #57A880;
   font-family: 'Roboto', sans-serif;
 }
-
 main {
   background: #ffffff;
 }
-
 #cal-container {
   width: 300px;
   height: 300px;
   border: 1px solid black;
   margin: 150px 300px;
 }
-
 #cal-header {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
-
 .month-year {
   display: inline;
 }
-
 #days-container {
   display: flex;
   justify-content: space-around;
 }
-
 header {
   background-color: #4A906D;
   color: white;
   height: 6rem;
 }
-
 .heading {
   font-family: 'Galada', cursive;
   font-size: 3rem;
   display: flex;
   padding-top: .5rem;
 }
-
 .leftAndRightSideBox {
   margin: auto;
   background: #57A880;
@@ -71,7 +61,6 @@ header {
   background: #57A880;
   padding: 2rem;
 }
-
 #dateBox {
   background: #4A906D;
   margin: 0;
@@ -79,18 +68,15 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 #dateBox h3, h2 {
   color: #ffffff;
   margin: 0.3rem;
   padding: 0;
   font-size: 1.7rem;
 }
-
 .listOfCardBoxes {
   height: 100%;
 }
-
 .todoCardBox {
   height: 80%;
   width: 100%;
@@ -98,16 +84,13 @@ header {
   align-items: center;
   flex-direction: column;
 }
-
 .todoCardBox p {
   align-self: left;
 }
-
 .addSection {
   justify-content: space-between;
   align-items: center;
 }
-
 .addBtn {
   background-color: lightgrey;
   border-style: solid 1px;
@@ -118,13 +101,11 @@ header {
   height: 2rem;
   font-size: 1rem;
 }
-
 .list-content {
   flex-direction: column;
   align-items: center;
   padding: 0;
 }
-
 li {
   display: flex;
   justify-content: space-between;
@@ -134,7 +115,6 @@ li {
   border-bottom: 1px solid black;
   width: 100%;
 }
-
 .trash-button {
   background-color: #57A880;
   border: none;
@@ -168,13 +148,11 @@ li {
   border: 2px solid #888;
   width: 70%;
 }
-
 .BtnTodo {
   color: #2e2d2d;
   border: 1px solid #888;
   padding: 0.2rem;
 }
-
 h5 {
   margin: 0.8rem;
   margin-left: 0;
@@ -189,7 +167,6 @@ h5 {
   font-size: 1.75rem;
   font-weight: bold;
 }
-
 .close:hover, .close:focus {
   color: #000000;
   text-decoration: none;
@@ -207,16 +184,13 @@ h5 {
 .flex {
   display: flex;
 }
-
 .center {
   justify-content: center;
   align-items: center;
 }
-
 .relative {
   position: relative;
 }
-
 .absolute {
   position: absolute;
 }
