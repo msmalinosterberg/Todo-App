@@ -49,7 +49,7 @@ function renderTodos() {
             const index = todos.indexOf(todoItem);
             todos.splice(index, 1);
             renderTodos();
-            // updateCalenderWithTodoInfo();
+            //updateCalenderWithTodoInfo();
         })
         listItem.append(trashButton);
         todoContainer.append(listItem);
