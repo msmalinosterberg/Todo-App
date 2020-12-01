@@ -1,4 +1,5 @@
 /* Smaller tablets */
+
 @media screen and (min-width: 769px) {
     header {
         height: 8rem;
@@ -10,28 +11,22 @@
         display: flex;
         flex-direction: row;
         background: #ffffff;
-
     }
     /* LEFT SIDE*/
     aside {
         flex-direction: column;
     }
-
     .leftSide {
         display: flex;
         flex-direction: column;
     }
-
     .add-content {
         width: 45%;
     }
-
     .button-plus {
-        /* Position */
         left: 16rem;
         bottom: 10rem;
-      }
-
+    }
     /* RIGHT SIDE*/
     .rightSide {
         display: flex;
@@ -42,47 +37,6 @@
         margin: 1rem;
         background-color: #fff;
     }
-
-    #app-calendar {
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        height: 100%;
-    }
-
-
-
-
-
-    #cal-container {
-        width: 300px;
-        height: 300px;
-        border: 1px solid black;
-        margin: 150px 300px;
-      }
-      
-      #cal-header {
-        margin-top: 1rem;
-        display: flex;
-        justify-content: space-around;
-      }
-      
-      
-      .month-year {
-        display: inline;
-      
-      }
-      
-      #days-container {
-        display: flex;
-        justify-content: space-around;
-      }
-
-
-
-
-
-   
     .current-year {
         margin-top: 0.625rem;
         color: black;
@@ -92,7 +46,7 @@
         letter-spacing: 0.1rem;
     }
     .month-of-year {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         color: black;
         font-weight: 300;
         letter-spacing: 0.1rem;
@@ -109,7 +63,7 @@
         grid-template-columns: repeat(7, 1fr);
     }
     .day-of-week>* {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: black;
         font-weight: 500;
         letter-spacing: 0.1rem;
@@ -173,9 +127,17 @@
         color: white;
         background: #4A906D;
     }
+    p {
+        color: black;
+        margin: 0;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1rem;
+    }
 }
 
 /*  Larger tablets */
+
 @media screen and (min-width: 1366px) {
     .current-year {
         margin-top: 0.625rem;

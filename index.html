@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./tablet.css">
   <link rel="stylesheet" href="./desktop.css">
   <script src="./todos.js"></script>
-  <script src="./calendar.js"></script>
+  <script defer src="./calendar.js"></script>
   <script defer src="./add-todo.js"></script>
   <script src="./welcome-segment.js"></script>
   <script src="./main.js"></script>
@@ -34,22 +34,24 @@
     <aside>
       <div class="leftSide">
         <div id="dateBox" class="center">
-          <h2 style="font-size: 2rem;" id="weekday"> </h2>
+          <h2 style="font-size: 2rem;" id="weekday"> </h2> 
           <h2 id="month"> </h2>
           <h2 id="time"> </h2>
         </div>
-        <h4>Things to do...</h4>
+        <div class="addSection flex">
+          <h4>Things to do...</h4>
+          <div class="button-plus">
+            <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
+            </button>
+          </div>
+        </div>
 
         <div class="listOfCardBoxes relative">
           <div id="todo-container" class="todoCardBox">
             <!-- Code injected from JavaScript-->
-            <div id="list-content" class="list-content">
+            <ul id="list-content" class="list-content flex">
               <!-- code injected from javascript -->
-            </div>
-          </div>
-          <div class="button-plus">
-            <button class="addBtn" id="addBtn"> <i class="fas fa-plus"> </i>
-            </button>
+            </ul>
           </div>
         </div>
 
@@ -75,9 +77,9 @@
     <!-- RIGHT SIDE -->
     <div class="rightSide">
       <main>
-        <div class="calendarContentBox">
+        <div>
           <div class="current-year">
-            <div>November 2020</div>
+            <time datetime="2020-11"> November 2020 </time>
           </div>
           <div class="month-of-year">
             <div>Jan</div>
@@ -102,126 +104,102 @@
             <div>Lördag</div>
             <div>Söndag</div>
           </div>
-
-          <div id="cal-container">
-            <div id="cal-header">
-              <div>
-                <p class="month-year" id="month"></p>
-              </div>
-              <div>
-                <p class="month-year" id="year"></p>
-              </div>
+          <div class="date-grid">
+            <div class="date">
+              <time id="time-div" datetime="2020-11-01">1</time>
             </div>
-            <div id="days-container">
-              <div id="0" class="day-column"> <p>Sun</p></div>
-              <div id="1" class="day-column"> <p>Mon</p></div>
-              <div id="2" class="day-column"> <p>Tue</p></div>
-              <div id="3" class="day-column"> <p>Wed</p></div>
-              <div id="4" class="day-column"> <p>Thu</p></div>
-              <div id="5" class="day-column"> <p>Fri</p></div>
-              <div id="6" class="day-column"> <p>Sat</p></div>
+            <div>
+              <time id="time-div" datetime="2020-11-02">2</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-03">3</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-04">4</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-05">5</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-06">6</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-07">7</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-08">8</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-09">9</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-10">10</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-11">11</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-12">12</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-13">13</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-14">14</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-15">15</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-16">16</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-17">17</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-18">18</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-19">19</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-20">20</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-21">21</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-22">22</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-23">23</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-24">24</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-25">25</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-26">26</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-27">27</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-28">28</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-29">29</time>
+            </div>
+            <div>
+              <time id="time-div" datetime="2020-11-30">30</time>
+              <!-- <span id="numbersOfTodos"></span> -->
             </div>
           </div>
         </div>
-
-
-        <!-- <div id="app-calendar"></div>
-          <div class="date-grid">
-            <div class="date">
-              <time datetime="2020-11-01">1</time>
-            <span>3</span>
-            </div>
-            <div>
-              <time datetime="2020-11-02">2</time>
-            </div>
-            <div>
-              <time datetime="2020-11-03">3</time>
-            </div>
-            <div>
-              <time datetime="2020-11-04">4</time>
-            </div>
-            <div>
-              <time datetime="2020-11-05">5</time>
-            </div>
-            <div>
-              <time datetime="2020-11-06">6</time>
-            </div>
-            <div>
-              <time datetime="2020-11-07">7</time>
-            </div>
-            <div>
-              <time datetime="2020-11-08">8</time>
-            </div>
-            <div>
-              <time datetime="2020-11-09">9</time>
-            </div>
-            <div>
-              <time datetime="2020-11-10">10</time>
-            </div>
-            <div>
-              <time datetime="2020-11-11">11</time>
-            </div>
-            <div>
-              <time datetime="2020-11-12">12</time>
-            </div>
-            <div>
-              <time datetime="2020-11-13">13</time>
-            </div>
-            <div>
-              <time datetime="2020-11-14">14</time>
-            </div>
-            <div>
-              <time datetime="2020-11-15">15</time>
-            </div>
-            <div>
-              <time datetime="2020-11-16">16</time>
-            </div>
-            <div>
-              <time datetime="2020-11-17">17</time>
-            </div>
-            <div>
-              <time datetime="2020-11-18">18</time>
-            </div>
-            <div>
-              <time datetime="2020-11-19">19</time>
-            </div>
-            <div>
-              <time datetime="2020-11-20">20</time>
-            </div>
-            <div>
-              <time datetime="2020-11-21">21</time>
-            </div>
-            <div>
-              <time datetime="2020-11-22">22</time>
-            </div>
-            <div>
-              <time datetime="2020-11-23">23</time>
-            </div>
-            <div>
-              <time datetime="2020-11-24">24</time>
-            </div>
-            <div>
-              <time datetime="2020-11-25">25</time>
-            </div>
-            <div>
-              <time datetime="2020-11-26">26</time>
-            </div>
-            <div>
-              <time datetime="2020-11-27">27</time>
-            </div>
-            <div>
-              <time datetime="2020-11-28">28</time>
-            </div>
-            <div>
-              <time datetime="2020-11-29">29</time>
-            </div>
-            <div>
-              <time datetime="2020-11-30">30</time>
-            </div>
-          </div> -->
+      </main>
     </div>
-    </main>
-  </div>
 </body>
 
 </html>
