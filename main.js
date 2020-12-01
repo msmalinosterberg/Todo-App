@@ -1,8 +1,8 @@
 window.addEventListener('load', start);
 
 function start() {
-      loadTodos();
-      addTodoListener();
-      startClock();
-      updateCalenderWithTodoInfo();
+    loadTodos();
+    addTodoListener();
+    startClock();
+    updateCalenderWithTodoInfo();
 }

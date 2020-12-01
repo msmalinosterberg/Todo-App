@@ -2,9 +2,11 @@
   list-style: none;
   box-sizing: border-box;
 }
+
 html {
   overflow-x: hidden;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -13,38 +15,46 @@ body {
   background-color: #57A880;
   font-family: 'Roboto', sans-serif;
 }
+
 main {
   background: #ffffff;
 }
+
 #cal-container {
   width: 300px;
   height: 300px;
   border: 1px solid black;
   margin: 150px 300px;
 }
+
 #cal-header {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
+
 .month-year {
   display: inline;
 }
+
 #days-container {
   display: flex;
   justify-content: space-around;
 }
+
 header {
   background-color: #4A906D;
   color: white;
   height: 6rem;
 }
-.heading {  
+
+.heading {
   font-family: 'Galada', cursive;
   font-size: 3rem;
   display: flex;
   padding-top: .5rem;
 }
+
 .leftAndRightSideBox {
   margin: auto;
   background: #57A880;
@@ -61,6 +71,7 @@ header {
   background: #57A880;
   padding: 2rem;
 }
+
 #dateBox {
   background: #4A906D;
   margin: 0;
@@ -68,15 +79,18 @@ header {
   display: flex;
   flex-direction: column;
 }
+
 #dateBox h3, h2 {
   color: #ffffff;
   margin: 0.3rem;
   padding: 0;
   font-size: 1.7rem;
 }
+
 .listOfCardBoxes {
   height: 100%;
 }
+
 .todoCardBox {
   height: 80%;
   width: 100%;
@@ -84,13 +98,16 @@ header {
   align-items: center;
   flex-direction: column;
 }
+
 .todoCardBox p {
   align-self: left;
 }
+
 .addSection {
   justify-content: space-between;
   align-items: center;
 }
+
 .addBtn {
   background-color: lightgrey;
   border-style: solid 1px;
@@ -101,101 +118,105 @@ header {
   height: 2rem;
   font-size: 1rem;
 }
+
 .list-content {
   flex-direction: column;
   align-items: center;
   padding: 0;
 }
+
 li {
   display: flex;
   justify-content: space-between;
-  color: #06130D; 
+  color: #06130D;
   margin: 0.5rem;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   border-bottom: 1px solid black;
   width: 100%;
 }
+
 .trash-button {
-  background-color:  #57A880;
+  background-color: #57A880;
   border: none;
   padding: 0.5rem;
   align-self: flex-end;
 }
 
 /* MODAL - ADD TODO */
+
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 13rem;
-  /* Location of the box */
   left: 0;
-  top: 0; 
+  top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
 }
+
 /* Modal Content */
+
 .add-content {
   background-color: #9FCDB6;
-  color: #2e2d2d; 
+  color: #2e2d2d;
   margin: auto;
   padding: 1.25rem;
   border: 2px solid #888;
   width: 70%;
-
 }
+
 .BtnTodo {
-  color: #2e2d2d; 
-  border: 1px solid #888; 
+  color: #2e2d2d;
+  border: 1px solid #888;
   padding: 0.2rem;
 }
+
 h5 {
-  margin: 0.8rem; 
-  margin-left: 0; 
+  margin: 0.8rem;
+  margin-left: 0;
   color: #06130D;
 }
+
 /* The Close Button */
+
 .close {
   color: #aaaaaa;
   float: right;
   font-size: 1.75rem;
   font-weight: bold;
 }
+
 .close:hover, .close:focus {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
 
-
 /* RIGHT SIDE*/
+
 .rightSide {
   display: none;
 }
 
-
 /* REUSABLE CLASSES*/
+
 .flex {
   display: flex;
 }
+
 .center {
   justify-content: center;
   align-items: center;
 }
+
 .relative {
   position: relative;
 }
+
 .absolute {
   position: absolute;
 }

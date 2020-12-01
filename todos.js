@@ -19,7 +19,6 @@ const addTodo = (ev) => {
     document.querySelector('form').reset();
     renderTodos();
     updateCalenderWithTodoInfo();
-    // console.log(todos);
 }
 
 
