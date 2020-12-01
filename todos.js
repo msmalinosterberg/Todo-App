@@ -19,7 +19,6 @@ const addTodo = (ev) => {
     document.querySelector('form').reset();
     renderTodos();
     updateCalenderWithTodoInfo();
-    // console.log(todos);
 }
 
 
@@ -49,7 +48,6 @@ function renderTodos() {
             const index = todos.indexOf(todoItem);
             todos.splice(index, 1);
             renderTodos();
-            // updateCalenderWithTodoInfo();
         })
         listItem.append(trashButton);
         todoContainer.append(listItem);

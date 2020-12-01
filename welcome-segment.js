@@ -1,19 +1,19 @@
 
 function startClock() {
-    setInterval (updateClock, 1000);
-} 
+    setInterval(updateClock, 1000);
+}
 
 function updateClock() {
     const date = new Date();
     let hours = date.getHours();
     let minutes = date.getMinutes();
-    
+
     hours = formatValue(hours);
     minutes = formatValue(minutes);
-    
+
     //update time 
     const timeHolder = document.getElementById('time');
-    timeHolder.innerText = hours + ':' + minutes 
+    timeHolder.innerText = hours + ':' + minutes
 
     //update weekday 
     const weekdayHolder = document.getElementById('weekday')
@@ -57,11 +57,11 @@ function getWeekday(date) {
         case 5: return 'Fredag';
         case 6: return 'Lördag';
     }
-    
+
 }
 
 function formatValue(value) {
-    if ( value < 10) {
+    if (value < 10) {
         return '0' + value;
     }
     return value;
