@@ -13,50 +13,38 @@ body {
   background-color: #57A880;
   font-family: 'Roboto', sans-serif;
 }
-
-
 main {
   background: #ffffff;
 }
-
 #cal-container {
   width: 300px;
   height: 300px;
   border: 1px solid black;
   margin: 150px 300px;
 }
-
 #cal-header {
   margin-top: 1rem;
   display: flex;
   justify-content: space-around;
 }
-
-
 .month-year {
   display: inline;
-
 }
-
 #days-container {
   display: flex;
   justify-content: space-around;
 }
-
-/* HEADER */
 header {
   background-color: #4A906D;
   color: white;
   height: 6rem;
 }
-
 .heading {  
   font-family: 'Galada', cursive;
   font-size: 3rem;
   display: flex;
   padding-top: .5rem;
 }
-
 .leftAndRightSideBox {
   margin: auto;
   background: #57A880;
@@ -73,7 +61,6 @@ header {
   background: #57A880;
   padding: 2rem;
 }
-
 #dateBox {
   background: #4A906D;
   margin: 0;
@@ -100,19 +87,11 @@ header {
 .todoCardBox p {
   align-self: left;
 }
-/* .todo-list {
-  display: inline-block;
-}  */
-
-.addSection
-{
-  display: flex;
+.addSection {
   justify-content: space-between;
   align-items: center;
 }
-
 .addBtn {
-  /* Styling */
   background-color: lightgrey;
   border-style: solid 1px;
   border-color: black;
@@ -122,15 +101,25 @@ header {
   height: 2rem;
   font-size: 1rem;
 }
-
-
-
+.list-content {
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
 li {
-  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
   color: #06130D; 
-  padding: 1rem;
+  margin: 0.5rem;
   font-size: 1.5rem; 
-
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.trash-button {
+  background-color:  #57A880;
+  border: none;
+  padding: 0.5rem;
+  align-self: flex-end;
 }
 
 /* MODAL - ADD TODO */
@@ -156,7 +145,6 @@ li {
   background-color: rgba(0, 0, 0, 0.4);
   /* Black w/ opacity */
 }
-
 /* Modal Content */
 .add-content {
   background-color: #9FCDB6;
@@ -167,14 +155,11 @@ li {
   width: 70%;
 
 }
-
 .BtnTodo {
   color: #2e2d2d; 
   border: 1px solid #888; 
   padding: 0.2rem;
-
 }
-
 h5 {
   margin: 0.8rem; 
   margin-left: 0; 
@@ -193,11 +178,11 @@ h5 {
   cursor: pointer;
 }
 
+
 /* RIGHT SIDE*/
 .rightSide {
   display: none;
 }
-
 
 
 /* REUSABLE CLASSES*/
