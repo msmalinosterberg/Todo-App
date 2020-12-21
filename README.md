@@ -1,7 +1,7 @@
-# Todo-App
+# Todo-Calendar
 
-2020-12-01 
 Miniprojekt "Todoer". 
+Uppgiften gick ut på att skapa ett verktyg där användaren kan skapa och schemalägga todos.
 
 
 Projektet gjordes tillsammans med  Camilla Johansson och Amanda Samuelsson. 
